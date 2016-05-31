@@ -8,18 +8,18 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist bubasuma/yii2-simplechat
+php composer.phar require --prefer-dist gofmanaa/yii2-simplechat
 ```
 
 or add
 
 ```
-"bubasuma/yii2-simplechat": "~2.0.0"
+   "gofmanaa/yii2-simplechat": "~2.0",
 ```
 
 to the require section of your `composer.json` file.
 
-##Demo
+##Demo only
 
 Once the extension is installed, simply modify your application configuration as follows:
 
