@@ -131,7 +131,7 @@ class MessageWidget extends ListView
         }
     }
 
-    public function getId()
+    public function getId($autoGenerate = true)
     {
         $users = [$this->user['id'], $this->contact['id']];
         sort($users);
