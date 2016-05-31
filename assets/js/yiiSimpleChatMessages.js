@@ -99,8 +99,10 @@
         send: function () {
             var $chat = $(this);
             var widget = $chat.data('yiiSimpleChatMessages');
-            var $form = $chat.find(widget.settings.form);
+            var $form = $(widget.settings.form);
             var url = $form.attr('action');
+            console.log($form);
+            console.log(url);
             $.ajax({
                 url: url,
                 type: $form.attr('method'),
@@ -225,7 +227,7 @@
             return this.each(function () {
                 var $chat = $(this);
                 var widget = $chat.data('yiiSimpleChatMessages');
-                var $form = $chat.find(widget.settings.form);
+                var $form = $(widget.settings.form);
                 $form.off('.yiiSimpleChatMessages');
                 $chat.removeData('yiiSimpleChatMessages');
             });
